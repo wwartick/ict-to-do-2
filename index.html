@@ -14,49 +14,52 @@
             <div id="title-div">
                 <h3>Groceries</h3>
                 <button>...</button>
-                <span>Shared with <span id="underline">1 person</span></span>
             </div>
 
-            <div id="not-completed-list">
-                <ul>
+            <span id="shared">Shared with <span id="underline">1 person</span></span>
+            
+            <div id="unchecked-div">
+                <ul id="unchecked-list">
                     <li>
-                        <input type="checkbox">
-                        <label>Eggs</label>
+                        <div class="fake-checkbox"></div>
+                        <span class="list-item">Eggs</span>
                     </li>
                     <li>
-                        <input type="checkbox">
-                        <label>Tomatoes</label>
+                        <div class="fake-checkbox"></div>
+                        <span class="list-item">Tomatoes</span>
                     </li>
                     <li>
-                        <input type="checkbox">
-                        <label>Avocado</label>
+                        <div class="fake-checkbox"></div>
+                        <span class="list-item">Avocado</span>
                     </li>
                 </ul>
             </div>
 
-            <div id="completed-list">
-                <ul>
+            <span id="completed-span">Completed (4)</span>
+
+            <div>
+                <ul id="completed-list">
                     <li>
-                        <input type="checkbox" checked>
-                        <label>Egg Noodles</label>
+                        <div class="fake-checkbox">✓</div>
+                        <span class="list-item">Egg Noodles</span>
                     </li>
                     <li>
-                        <input type="checkbox" checked>
-                        <label>Scampi</label>
+                        <div class="fake-checkbox">✓</div>
+                        <span class="list-item">Scampi</span>
                     </li>
                     <li>
-                        <input type="checkbox" checked>
-                        <label>Orange Juice</label>
+                        <div class="fake-checkbox">✓</div>
+                        <span class="list-item">Orange Juice</span>
                     </li>
                     <li>
-                        <input type="checkbox" checked>
-                        <label>Apples</label>
+                        <div class="fake-checkbox">✓</div>
+                        <span class="list-item">Apples</span>
                     </li>
                 </ul>
             </div>
             <button> + </button>
         </div>
     </div>
-    
+    <script src="script.js"> </script>
 </body>
 </html>

@@ -10,6 +10,7 @@
 *{
     margin:0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #background-container{
@@ -24,10 +25,84 @@
     background-color: var(--container-background);
     display: flex;
     flex-direction: column;
-    height: 60vh;
-    width: 30vw;
+    height: 38em;
+    width: 20em;
     border-radius: 25px;
     box-shadow: 25px 0px 3px -10px var(--container-shadow),
                  -5px 5px 5px  var(--container-shadow);
 }
 
+#title-div{
+    margin: 1.5em 1em 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title-div > h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#title-div > button {
+    background-color: var(--container-background);
+    color: var(--completed-color);
+    border: none;
+    align-self: center;
+    font-size: 1.25em;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    width: 2em;
+}
+
+.fake-checkbox:hover,
+#underline:hover,
+#title-div > button:hover {
+    cursor: pointer;
+}
+
+#shared{
+    margin: 0 0em 1em 2.2em;
+    color: var(--completed-color);
+    font-size: .7em;
+}
+
+#underline{
+    text-decoration: underline;
+}
+
+#completed-list,
+#unchecked-list{
+    list-style: none;   
+    margin-left: 1.5em;
+}
+
+#completed-list > li,
+#unchecked-list > li{
+    display: flex;
+    align-items: center;
+    margin: .5em 0;
+    gap: .5em;
+}
+
+.fake-checkbox {
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    color: var(--completed-color);
+    aspect-ratio: 1;
+    height: 1.5em;
+    border-radius: 50%;
+}
+
+.list-item{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: .85em;
+    margin-top: 2px;
+}
+
+#completed-span {
+
+}
