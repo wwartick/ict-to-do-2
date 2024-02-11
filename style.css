@@ -25,7 +25,7 @@
     background-color: var(--container-background);
     display: flex;
     flex-direction: column;
-    height: 38em;
+    height: 35em;
     width: 20em;
     border-radius: 25px;
     box-shadow: 25px 0px 3px -10px var(--container-shadow),
@@ -57,6 +57,7 @@
     width: 2em;
 }
 
+#plus-button:hover,
 .fake-checkbox:hover,
 #underline:hover,
 #title-div > button:hover {
@@ -83,8 +84,8 @@
 #unchecked-list > li{
     display: flex;
     align-items: center;
-    margin: .5em 0;
-    gap: .5em;
+    margin: 1em 0;
+    gap: .35em;
 }
 
 .fake-checkbox {
@@ -104,5 +105,36 @@
 }
 
 #completed-span {
+    color: var(--primary-color);
+    font-size: .7em;
+    font-weight: 600;
+    margin: 2em 0 0 2.25em;
+}
 
+#completed-list :is(span,div){
+    color: var(--completed-color);
+}
+
+#completed-list :is(div){
+    border: 1px solid var(--completed-color);
+}
+
+#plus-button{
+    align-self: flex-end;
+    width: 1.75em;
+    border-radius: 12px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--container-background);
+    font-size: 2.5em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+#plus-button:hover{
+    transform: scale(1.1);
+}
+
+#plus-button:active{
+    transform: scale(.9);
 }
